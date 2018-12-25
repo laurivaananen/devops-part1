@@ -16,6 +16,8 @@ Inside the frontend-example-docker folder I built the image with
 docker build -t front-endexample .
 `
 
+And then run the image with
+
 `
 docker run -p 5000:5000 -d frontend-example
 `
@@ -26,7 +28,7 @@ The dockerfiles are in the folders `backend-example-docker` and `frontend-exampl
 
 Dockerfile for backend
 
-`
+```
 FROM node
 WORKDIR /workdir
 COPY . .
@@ -34,11 +36,11 @@ RUN npm install
 EXPOSE 8000
 ENV FRONT_URL=http://localhost:5000
 CMD ["npm", "start"]
-`
+```
 
 Dockerfile for frontend
 
-`
+```
 FROM node
 WORKDIR /workdir
 COPY . .
@@ -46,4 +48,4 @@ RUN npm install
 EXPOSE 5000
 ENV API_URL=http://localhost:8000
 CMD ["npm", "start"]
-`
+```

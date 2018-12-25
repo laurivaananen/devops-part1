@@ -4,9 +4,10 @@ Input I used to run the container:
 
 After the container opened I opened another terminal window and typed docker ps which printed
 
-`CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+```
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
 1002e5752905        ubuntu              "sh -c 'read website…"   5 seconds ago       Up 4 seconds                            loving_babbage
-`
+```
 
 While in the second terminal I updated packages and installed curl
 
