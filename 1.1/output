@@ -1,0 +1,4 @@
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                      PORTS               NAMES
+b4c335fe3c37        postgres            "docker-entrypoint.s…"   59 seconds ago       Exited (0) 17 seconds ago                       musing_mayer
+b52692d4f2b1        redis               "docker-entrypoint.s…"   About a minute ago   Up About a minute           6379/tcp            nifty_hugle
+4d9d09c53e43        nginx               "nginx -g 'daemon of…"   About a minute ago   Exited (0) 29 seconds ago                       musing_bose
